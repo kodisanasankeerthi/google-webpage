@@ -6,7 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="icon" href="chrome logo.png">
-    <link rel="stylesheet" href="Style.css">
+    <style>
+    body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+a {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav {
+  align-items: center;
+  margin-right: 15px;
+  display: flexbox;
+  padding-left: 20px;
+}
+ul > a,
+ul > img {
+  padding: 0 8px;
+}
+.header-img:hover {
+  box-shadow: 0 0 10px 0 rgb(160, 155, 155);
+  border-radius: 10px;
+  cursor: pointer;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+.my-input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  height: 29px;
+  border: 2px solid gainsboro;
+  border-radius: 20px;
+  padding: 2px;
+}
+.my-input-container:hover {
+  box-shadow: 0 0 10px 0 gray;
+}
+.my-input-container .my-input-container > input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+img:hover {
+  cursor: pointer;
+}
+.my-button-container {
+  padding-top: 53px;
+}
+button {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  border: none;
+  height: 36px;
+  padding: 0 20px;
+  margin: 0 4px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+footer {
+  background-color: #f2f2f2;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+#footer-left {
+  display: flex;
+  justify-self: start;
+  padding-left: 20px;
+  align-items: center;
+}
+#footer-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  align-items: center;
+}
+@media (max-width: 630px) {
+  #footer-nav {
+    flex-direction: column;
+  }
+  #footer-left {
+    justify-content: center;
+  }
+  #footer-right {
+    justify-content: center;
+  }
+  .my-input-container {
+    width: 95vw;
+  }
+}
+@media (max-height: 522px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    margin-bottom: 20px;
+  }
+  footer {
+    position: relative;
+  }
+}
+@media (max-height: 570px) and (max-width: 630px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    margin-bottom: 13px;
+  }
+  footer {
+    position: relative;
+  }
+}
+    </style>
 </head>
 <body>
     <header>
